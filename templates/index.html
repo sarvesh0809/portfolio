@@ -109,22 +109,31 @@
 
         <div class="separator"></div>
 
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
+        <ul class="social-list">                
           <li class="social-item">
             <a href="#" class="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-stackoverflow"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
         </ul>
@@ -152,11 +161,7 @@
 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
+          </li>          
 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
@@ -176,7 +181,6 @@
         <section class="about-text">
           <p>
             Introducing the Web App Wizard: Crafting Captivating and Innovative Web Applications. 
-            
           </p>
           
           <p>           
@@ -368,47 +372,7 @@
           - clients
         -->
 
-        <section class="clients">
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-            <li class="clients-item">
-              <a href="#">
-                <img src="{% static 'assets/images/logo-1-color.png' %}"  alt="client logo" />
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="{% static 'assets/images/logo-2-color.png' %}"  alt="client logo" />
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="{% static 'assets/images/logo-3-color.png' %}"  alt="client logo" />
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="{% static 'assets/images/logo-4-color.png' %}"  alt="client logo" />
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="{% static 'assets/images/logo-5-color.png' %}"  alt="client logo" />
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="{% static 'assets/images/logo-6-color.png' %}"  alt="client logo" />
-              </a>
-            </li>
-          </ul>
-        </section>
+        
       </article>
 
       <!--
@@ -606,21 +570,21 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn>Forms9</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Applications</button>
+              <button data-filter-btn>Freelancing</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web development</button>
+              <button data-filter-btn>Accenture</button>
             </li>
           </ul>
 
           <div class="filter-select-box">
             <button class="filter-select" data-select>
-              <div class="select-value" data-selecct-value>
+              <div class="select-value" data-select-value>
                 Select category
               </div>
 
@@ -635,170 +599,242 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>Forms9</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Applications</button>
+                <button data-select-item>Freelancing</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web development</button>
+                <button data-select-item>Accenture</button>
               </li>
             </ul>
           </div>
 
           <ul class="project-list">
-            <li class="project-item active" data-filter-item data-category="web development" data-portfolio-item>
+            <li class="project-item active" data-filter-item data-category="Forms9" data-portfolio-item>
               <a href="#">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="{% static 'assets/images/portfolio/Inventory1.png' %}"  alt="inventorymanagement" loading="lazy" data-portfolio-image-1 />
-                  <img src="{% static 'assets/images/portfolio/Inventory2.png' %}"  alt="inventorymanagement" loading="lazy" data-portfolio-image-2 style="display: none;"/>
-                  <img src="{% static 'assets/images/portfolio/Inventory3.png' %}"  alt="inventorymanagement" loading="lazy" data-portfolio-image-3 style="display: none;"/>
+                  <img src="{% static 'assets/images/portfolio/Inventory1.png' %}" alt="inventorymanagement" loading="lazy" data-portfolio-image-1 />
+                  <img src="{% static 'assets/images/portfolio/Inventory2.png' %}" alt="inventorymanagement" loading="lazy" data-portfolio-image-2 style="display: none;" />
+                  <img src="{% static 'assets/images/portfolio/Inventory3.png' %}" alt="inventorymanagement" loading="lazy" data-portfolio-image-3 style="display: none;" />
                 </figure>
-
                 <h3 class="project-title" data-portfolio-title>Inventory Management</h3><br><br>
-
-                <p class="project-category" data-portfolio-text style="display: none;">As a skilled and innovative web developer, I successfully designed and developed an advanced Inventory Management System for the esteemed company, <b style="color:  var(--orange-yellow-crayola);">Forms9</b>. Leveraging cutting-edge technologies such as <b style="color:  var(--orange-yellow-crayola);">Python, Django, HTML/CSS, JavaScript, AJAX, and REST API,</b> I created a feature-rich application that has transformed the way product data is managed.
-                <br><br>
-                A standout feature of the application is its user-friendly multi-inline form, enabling seamless entry and storage of product data. Users can effortlessly select cipher values based on price, while also having the freedom to add product categories and sub-categories to organize their inventory efficiently.
-                <br><br>
-                The system's versatility shines through with its ability to generate customizable prints for various functions, such as product labels, inwarded quantity reports, and packing records. Additionally, users can effortlessly manage product returns, ensuring error-free transactions and maintaining optimal inventory control.
-                <br><br>
-                To further streamline operations, the application incorporates a dispatch feature, empowering users to monitor multiple packings sent outside the company. The inclusion of a unique and sequential product numbering system ensures accurate tracking and easy retrieval of vital information.
-                <br><br>
-                The Inventory Management System also offers a comprehensive array of capabilities, ranging from the flexibility to edit and delete inward records to adding, updating, or removing suppliers. Users can generate invoices effortlessly and swiftly find barcodes or apply filters to locate specific products with ease.
-                <br><br>
-                Furthermore, the system includes robust reporting features, providing insightful data analysis and performance evaluations. It empowers users to make informed decisions and optimize their inventory management strategies effectively.
-                <br><br>
-                This achievement showcases my expertise in web development and my commitment to creating sophisticated, user-centric solutions. I take great pride in this project and look forward to continuing my journey of delivering remarkable and impactful web applications to meet the unique needs of clients.</p>
+                <p class="project-category" data-portfolio-text style="display: none;">
+                  As a skilled and innovative web developer, I successfully designed and developed an advanced Inventory Management System for the esteemed company, <b style="color: var(--orange-yellow-crayola);">Forms9</b>. Leveraging cutting-edge technologies such as <b style="color: var(--orange-yellow-crayola);">Python, Django, HTML/CSS, JavaScript, AJAX, and REST API,</b> I created a feature-rich application that has transformed the way product data is managed.
+                  <br><br>
+                  <b style="color: var(--orange-yellow-crayola);">Seamless Product Data Management:</b>
+                  <br>&#8226; User-friendly Multi-Inline Form: Effortlessly enter and store product data with the convenience of selecting cipher values based on price and adding product categories and sub-categories for efficient inventory organization.
+                  <br>&#8226; Customizable Prints: Generate product labels, inwarded quantity reports, and packing records with ease for streamlined operations and error-free transactions.
+                  <br>&#8226; Dispatch Feature: Monitor multiple packings sent outside the company for effective inventory control and accurate tracking.
+                  <br>&#8226; Comprehensive Capabilities: From editing and deleting inward records to managing suppliers, the application empowers users to handle various inventory tasks effortlessly.
+                  <br>&#8226; Robust Reporting: Gain valuable data analysis and performance evaluations, enabling informed decisions and optimized inventory management strategies.
+                  <br><br>
+                  This achievement showcases my expertise in web development and my commitment to creating sophisticated, user-centric solutions. I take great pride in this project and look forward to continuing my journey of delivering remarkable and impactful web applications to meet the unique needs of clients.
+                </p>
               </a>
-            </li>      
+            </li>                 
 
-            <li class="project-item active" data-filter-item data-category="web development" data-portfolio-item>
+            <li class="project-item active" data-filter-item data-category="Forms9" data-portfolio-item>
               <a href="#">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="{% static 'assets/images/portfolio/Billing1.png' %}"  alt="billmanagement" loading="lazy" data-portfolio-image-1 />
-                  <img src="{% static 'assets/images/portfolio/Billing2.png' %}"  alt="billmanagement" loading="lazy" data-portfolio-image-2 style="display: none;"/>
-                  <img src="{% static 'assets/images/portfolio/Billing3.png' %}"  alt="billmanagement" loading="lazy" data-portfolio-image-3 style="display: none;"/>
+                  <img src="{% static 'assets/images/portfolio/Billing1.png' %}" alt="billmanagement" loading="lazy" data-portfolio-image-1 />
+                  <img src="{% static 'assets/images/portfolio/Billing2.png' %}" alt="billmanagement" loading="lazy" data-portfolio-image-2 style="display: none;" />
+                  <img src="{% static 'assets/images/portfolio/Billing3.png' %}" alt="billmanagement" loading="lazy" data-portfolio-image-3 style="display: none;" />
                 </figure>
-
                 <h3 class="project-title" data-portfolio-title>Bill Management</h3><br><br>
-
-                <p class="project-category" data-portfolio-text style="display: none;">Introducing a cutting-edge Billing Software designed specifically for the discerning needs of prominent companies - "Manage your incentives the right way with SPE." This innovative solution empowers businesses to effortlessly track and manage all their bills from various sources, conveniently centralized in one comprehensive platform.
+                <p class="project-category" data-portfolio-text style="display: none;">
+                  Introducing a cutting-edge Billing Software designed specifically for the discerning needs of prominent companies - <b style="color: var(--orange-yellow-crayola);">Manage your incentives the right way with SPE</b>. This innovative solution empowers businesses to effortlessly track and manage all their bills from various sources, conveniently centralized in one comprehensive platform.
                   <br><br>
-                  SPE Billing Software is tailored to cater to giants of the industry, providing them with a seamless and efficient way to handle their billing processes. With the ability to customize the platform according to individual plant requirements, it offers unparalleled flexibility and adaptability to suit diverse business needs.
+                  <b style="color: var(--orange-yellow-crayola);">Tailored for Giants of the Industry:</b>
+                  <br>&#8226; Customizable Platform: SPE Billing Software can be tailored to individual plant requirements, offering unparalleled flexibility and adaptability to suit diverse business needs.
+                  <br>&#8226; Robust Technology Stack: Built on Python, Django, HTML/CSS, JavaScript, AJAX, and REST API, this software stands as a testament to expertise in web development.
+                  <br>&#8226; Enhanced Payment Processing: The inclusion of Razor Pay elevates the user experience, ensuring secure and hassle-free payment processing for enhanced convenience.
                   <br><br>
-                  Built on a robust technology stack encompassing Python, Django, HTML/CSS, JavaScript, AJAX, and REST API, this software stands as a testament to my expertise in web development. The inclusion of Razor Pay elevates the user experience, ensuring secure and hassle-free payment processing for enhanced convenience.
+                  <b style="color: var(--orange-yellow-crayola);">Optimize Incentives Management:</b>
+                  <br>&#8226; Streamlined Operations: SPE Billing Software empowers businesses to optimize their incentives management, streamline operations, and gain valuable financial insights.
+                  <br>&#8226; Intuitive Interface: The system's intuitive interface and user-friendly design make it a valuable asset for any enterprise seeking utmost efficiency in their billing workflows.
                   <br><br>
-                  With SPE Billing Software, businesses can optimize their incentives management, streamline operations, and gain valuable insights into their financial processes. The system's intuitive interface and user-friendly design make it a valuable asset for any enterprise seeking to achieve utmost efficiency in their billing workflows.
+                  This project is a remarkable addition to my portfolio, highlighting my ability to create sophisticated and functional software solutions that cater to the specific demands of distinguished companies. I am proud to have developed SPE Billing Software and look forward to presenting this achievement as a testament to my dedication and proficiency in delivering exceptional web applications.
+                </p>
+              </a>
+            </li>
+            
+            <li class="project-item active" data-filter-item data-category="Freelancing" data-portfolio-item>
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="{% static 'assets/images/portfolio/Instapdf1.png' %}" alt="instapdf" loading="lazy" data-portfolio-image-1 />
+                  <img src="{% static 'assets/images/portfolio/Instapdf2.png' %}" alt="instapdf" loading="lazy" data-portfolio-image-2 style="display: none;" />
+                  <img src="{% static 'assets/images/portfolio/Instapdf3.png' %}" alt="instapdf" loading="lazy" data-portfolio-image-3 style="display: none;" />
+                </figure>
+                <h3 class="project-title" data-portfolio-title>Instalab PDF</h3><br><br>
+                <p class="project-category" data-portfolio-text style="display: none;">
+                  I am proud to have successfully developed a cutting-edge software solution for <b style="color:  var(--orange-yellow-crayola);">INSTLAB</b>, leveraging a powerful technology stack that includes Python, Django, HTML/CSS, JavaScript, AJAX, and REST API. This exceptional software offers seamless date and time integration into PDF documents, revolutionizing the way users manage and customize their files.
                   <br><br>
-                  This project is a remarkable addition to my portfolio, highlighting my ability to create sophisticated and functional software solutions that cater to the specific demands of distinguished companies. I am proud to have developed SPE Billing Software and look forward to presenting this achievement as a testament to my dedication and proficiency in delivering exceptional web applications.</p></a>
-            </li> 
-
-            <li class="project-item active" data-filter-item data-category="applications">
+                  <b style="color:  var(--orange-yellow-crayola);">The Core Functionality:</b>
+                  <br>&#8226; User-Friendly Interface: The software allows users to input specific date and time data along with a PDF file. Upon clicking the submit button, the software dynamically generates and serves a modified PDF file, with the provided date and time precisely printed at the designated coordinates on each page.
+                  <br>&#8226; Dynamic and Intelligent Approach: This intelligent and dynamic approach ensures that every document carries accurate and relevant timestamps, enhancing data clarity and organization.
+                  <br><br>
+                  <b style="color:  var(--orange-yellow-crayola);">Key Feature - Streamlining Repetitive Tasks:</b>
+                  <br>&#8226; PDF Coordinates: Users can upload and set PDF coordinates in the database, granting them the convenience of future use. Subsequent interactions are simplified, reducing manual efforts and enhancing overall productivity.
+                  <br><br>
+                  <b style="color:  var(--orange-yellow-crayola);">Ensuring Data Security:</b>
+                  <br>&#8226; Privacy and Confidentiality: The application is hosted on INSTLAB's private server, ensuring all interactions and files remain private and instilling trust and confidence in users.
+                  <br><br>
+                  My collaboration with INSTLAB has been an exciting journey, and I take great pride in delivering a software solution that caters to their specific requirements. This remarkable achievement underscores my expertise in web development and my commitment to excellence, and I eagerly anticipate further opportunities to create impactful and sophisticated applications that elevate user experiences and streamline operations for my clients.
+                </p>
+              </a>
+            </li>
+            
+            <li class="project-item active" data-filter-item data-category="Accenture" data-portfolio-item>
               <a href="#">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="{% static 'assets/images/project-4.png' %}"  alt="brawlhalla" loading="lazy" />
+                  <img src="{% static 'assets/images/portfolio/Karseva1.png' %}" alt="Karseva" loading="lazy" data-portfolio-image-1 />
+                  <img src="{% static 'assets/images/portfolio/Karseva2.png' %}" alt="Karseva" loading="lazy" data-portfolio-image-2 style="display: none;" />
+                  <img src="{% static 'assets/images/portfolio/Karseva3.png' %}" alt="Karseva" loading="lazy" data-portfolio-image-3 style="display: none;" />
                 </figure>
-
-                <h3 class="project-title">Gamer</h3>
-
-                <p class="project-category">Applications</p>
+                <h3 class="project-title" data-portfolio-title>KARSEVA</h3><br><br>
+                <p class="project-category" data-portfolio-text style="display: none;">
+                  Karseva is a visionary <b style="color:  var(--orange-yellow-crayola);">Progressive Web Application (PWA)</b> designed to support and care for the elderly, ensuring they lead fulfilling lives as they age gracefully. Our mission is to bridge the generational gap by connecting young adults willing to share their time and energy with the elderly, fostering harmony and compassion within communities.
+                  <br><br>
+                  <b style="color:  var(--orange-yellow-crayola);">Key Features:</b>
+                  <br>&#8226; Seamless Connection: Karseva connects compassionate young adults with elderly individuals, promoting meaningful interactions and mutual support.
+                  <br>&#8226; Coordinators: Dedicated coordinators act as bridges between advocates and customers, ensuring efficient communication and fostering strong relationships.
+                  <br>&#8226; Technology-driven: Leveraging cutting-edge technologies like Python, Django, HTML/CSS, JavaScript, AJAX, and AWS Cloud, Karseva offers a seamless and secure user experience.
+                  <br><br>
+                  <b style="color:  var(--orange-yellow-crayola);">Advantages:</b>
+                  <br>&#8226; Empowering Advocacy: Karseva empowers advocates to make a positive impact on the lives of aging parents and grandparents, fostering a sense of purpose and fulfillment.
+                  <br>&#8226; Harmonious Community: By connecting generations, Karseva creates a harmonious community that promotes compassion, understanding, and shared experiences.
+                  <br>&#8226; Accessible Care: Karseva ensures that elderly individuals receive the care and attention they deserve, enhancing their overall quality of life.
+                  <br><br>
+                  <b style="color:  var(--orange-yellow-crayola);">The Impact:</b>
+                  <br>&#8226; Transformative Connection: Karseva's transformative approach builds strong connections between generations, enriching lives on both ends.
+                  <br>&#8226; Social Change: By promoting intergenerational care and support, Karseva contributes to positive social change and a more compassionate society.
+                  <br>&#8226; Technological Innovation: Karseva showcases the power of technology in addressing real-world challenges, making a difference in the lives of the elderly.
+                  <br><br>
+                  With Karseva, we have harnessed the power of technology to foster a compassionate community that transcends boundaries, making the world a better place for the elderly and the young generation alike. I am honored to have created Karseva as part of the <b style="color:  var(--orange-yellow-crayola);">Accenture: GTIC competition</b>, and I am deeply committed to continuing our mission of creating impactful applications that bring positive change to the lives of people around the globe. Together, we can make a difference and uphold the spirit of Karseva - caring, sharing, and building a brighter future for all.
+                </p>
               </a>
             </li>
-
-            <li class="project-item active" data-filter-item data-category="web design">
+            
+            
+            <li class="project-item active" data-filter-item data-category="Forms9" data-portfolio-item>
               <a href="#">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="{% static 'assets/images/project-5.png' %}"  alt="dsm." loading="lazy" />
+                  <img src="{% static 'assets/images/portfolio/MiniInw1.png' %}" alt="MiniInw" loading="lazy" data-portfolio-image-1 />
+                  <img src="{% static 'assets/images/portfolio/MiniInw2.png' %}" alt="MiniInw" loading="lazy" data-portfolio-image-2 style="display: none;" />
+                  <img src="{% static 'assets/images/portfolio/MiniInw3.png' %}" alt="MiniInw" loading="lazy" data-portfolio-image-3 style="display: none;" />
                 </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
+            
+                <h3 class="project-title" data-portfolio-title>ECOSTOCK</h3><br><br>
+            
+                <p class="project-category" data-portfolio-text style="display: none;">
+                  Introducing "ECOSTOCK," a revolutionary <b style="color: var(--orange-yellow-crayola);">Progressive Web Application (PWA)</b> meticulously designed to elevate inventory management to new heights while embracing environmental consciousness. ECOSTOCK seamlessly integrates cutting-edge technologies, including Python, Django, HTML/CSS, JavaScript, AJAX, and REST API, to streamline inventory processes and reduce paper waste, making it an eco-friendly and efficient solution for businesses.
+                  <br><br>
+                  <b style="color: var(--orange-yellow-crayola);">Key Features:</b>
+                  <br>&#8226; Advanced Inventory Management: With ECOSTOCK, managing inventory becomes effortless. Leverage Python, Django, and the latest technologies to stay ahead in inventory tracking and management.
+                  <br>&#8226; Seamless Google Drive Integration: ECOSTOCK offers seamless integration with Google Drive Sheets, providing secure data storage and accessibility for every user.
+                  <br>&#8226; Environmentally Conscious Image Processing: The application's innovative image processing feature automatically removes image backgrounds, reducing the need for additional editing software and promoting eco-friendly practices.
+                  <br>&#8226; Intelligent Data Linking: Generate convenient links for each image, and effortlessly save them into the corresponding Excel sheet, enabling quick access and retrieval of essential data.
+                  <br><br>
+                  <b style="color: var(--orange-yellow-crayola);">The Impact:</b>
+                  <br>&#8226; Sustainable Inventory Management: ECOSTOCK empowers businesses to embrace eco-conscious practices while experiencing optimal productivity and performance.
+                  <br>&#8226; Fostering Environmental Responsibility: As the creator of ECOSTOCK, I am committed to delivering impactful solutions that resonate with businesses seeking sustainable success.
+                  <br>&#8226; Showcasing Transformative Capabilities: ECOSTOCK stands as a testament to the transformative potential of technology, inspiring others to embrace innovation for a brighter, more sustainable future.
+                  <br><br>
+                  As a web developer with a passion for innovation and sustainability, I take great pride in creating solutions like ECOSTOCK that bridge the gap between technology and environmental responsibility. Join me in celebrating this remarkable achievement as we continue our journey of responsible innovation and create a greener, more sustainable world through ECOSTOCK.
+                </p>
               </a>
             </li>
-
-            <li class="project-item active" data-filter-item data-category="web design">
+            
+            <li class="project-item active" data-filter-item data-category="Forms9" data-portfolio-item>
               <a href="#">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="{% static 'assets/images/project-6.png' %}"  alt="metaspark" loading="lazy" />
+                  <img src="{% static 'assets/images/portfolio/verification1.png' %}" alt="verification" loading="lazy" data-portfolio-image-1 />
+                  <img src="{% static 'assets/images/portfolio/verification2.png' %}" alt="verification" loading="lazy" data-portfolio-image-2 style="display: none;" />
+                  <img src="{% static 'assets/images/portfolio/verification3.png' %}" alt="verification" loading="lazy" data-portfolio-image-3 style="display: none;" />
                 </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
+                <h3 class="project-title" data-portfolio-title>FORM2FILL</h3><br><br>
+                <p class="project-category" data-portfolio-text style="display: none;">
+                  Form2Fill is a digital platform providing a solution to digitize the processes of form filling requirements of various institutions, thereby eliminating the need for pre-printed forms and an end to data entry errors, hence saving time and space on voluminous and repetitive paperwork.
+                  <br><br>
+                  <b style="color:  var(--orange-yellow-crayola);">Key Features:</b>
+                  <br>&#8226; Streamlined Digital Forms: Handwritten forms become a thing of the past. Users benefit from editable and dynamic digital forms that offer effortless editing, spell-checking, and revision capabilities, ensuring a professional and polished outcome.
+                  <br>&#8226; Seamless Integration: The platform seamlessly integrates with applicant tracking systems, databases, and software, allowing institutions to optimize data flow, enhance analysis, and make informed decisions.
+                  <br>&#8226; Privacy and Security: Form2Fill prioritizes data security, ensuring the utmost privacy and confidentiality. The traditional inefficiencies of physical storage and transportation are eliminated, giving users peace of mind.
+                  <br>&#8226; User-Centric Subscription Model: Form2Fill offers a flexible subscription-based revenue model, providing different pricing tiers based on the volume of documents processed. The platform's features can be tailored to meet diverse client needs, including integration with other software and advanced security options.
+                  <br><br>
+                  <b style="color:  var(--orange-yellow-crayola);">Advantages:</b>
+                  <br>&#8226; Time-Saving Efficiency: Form2Fill accelerates the form-filling process, replacing time-consuming handwritten documents with swift digital solutions.
+                  <br>&#8226; Elimination of Data Entry Errors: Say goodbye to data entry mistakes with Form2Fill's dynamic and error-free digital forms.
+                  <br>&#8226; Enhanced Data Management: The platform enables seamless integration with various software applications, promoting automated data extraction, analysis, and integration with other systems.
+                  <br>&#8226; Convenient and Organized Storage: Digital forms are easily stored, duplicated, and retrieved when needed, reducing physical storage hassles.
+                  <br><br>
+                  <b style="color:  var(--orange-yellow-crayola);">The Impact:</b>
+                  <br>&#8226; Form2Fill is a transformative digital solution that revolutionizes form filling for institutions of all sizes. With its user-centric design, advanced technology stack, and commitment to data privacy, Form2Fill empowers businesses to unlock new levels of efficiency and productivity.
+                  <br><br>
+                  As a web developer with a passion for innovation, I take great pride in creating solutions like Form2Fill that bridge the gap between traditional processes and modern advancements. This project is a testament to my dedication to excellence and my commitment to delivering remarkable web applications that exceed client expectations.
+                  <br><br>
+                  Form2Fill stands as a cornerstone of my portfolio, showcasing my proficiency in crafting tailored solutions that address real-world challenges. Join me in celebrating this remarkable achievement as I continue my journey of delivering impactful web applications to meet the unique needs of clients worldwide. Together, we embrace the future of form-filling with Form2Fill - where convenience, security, and cutting-edge technology converge to reshape the way institutions manage their form processes.
+                </p>
               </a>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="web development">
+            <li class="project-item active" data-filter-item data-category="Freelancing" data-portfolio-item>
               <a href="#">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="{% static 'assets/images/project-7.png' %}"  alt="summary" loading="lazy" />
+                  <img src="{% static 'assets/images/portfolio/Covid1.png' %}" alt="Covid" loading="lazy" data-portfolio-image-1 />
+                  <img src="{% static 'assets/images/portfolio/Covid2.png' %}" alt="Covid" loading="lazy" data-portfolio-image-2 style="display: none;" />
+                  <img src="{% static 'assets/images/portfolio/Covid3.png' %}" alt="Covid" loading="lazy" data-portfolio-image-3 style="display: none;" />
                 </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
+                <h3 class="project-title" data-portfolio-title>COVID19 Tracker</h3><br><br>
+                <p class="project-category" data-portfolio-text style="display: none;">
+                  COVID19 Tracker is an impactful Progressive Web Application (PWA) designed to track and provide essential details of COVID-19 cases, empowering users with real-time data analysis and informed decision-making during the early stages of the pandemic.
+                  <br><br>
+                  <b style="color:  var(--orange-yellow-crayola);">Key Features:</b>
+                  <br>&#8226; Comprehensive Data Tracking: COVID19 Tracker delivers real-time updates on total cases, active cases, deaths, recoveries, and more, ensuring users stay informed about the rapidly evolving situation.
+                  <br>&#8226; Granular Filter Options: Users can filter data country-wise, state-wise, and city-wise, providing a deeper understanding of the local impact and response to the pandemic.
+                  <br>&#8226; Intuitive Data Visualization: The platform presents data in visually appealing and easily digestible card formats, enhancing data comprehension and accessibility.
+                  <br><br>
+                  <b style="color:  var(--orange-yellow-crayola);">The Technology Stack:</b>
+                  <br>
+                  COVID19 Tracker is powered by a robust technology stack, including Django, Python, JavaScript, AJAX, and Web Scraping, ensuring data accuracy and seamless user interactions.
+                  <br><br>
+                  <b style="color:  var(--orange-yellow-crayola);">The Impact:</b>
+                  <br>&#8226; Empowering Informed Decision-Making: COVID19 Tracker equips users with vital data insights, enabling data-driven responses to the pandemic.
+                  <br>&#8226; Promoting Public Health Awareness: The platform plays a pivotal role in fostering awareness about the pandemic's impact and encourages responsible behavior to combat the virus.
+                  <br>&#8226; Early Pandemic Response: As a developer of COVID19 Tracker, I take pride in contributing to the collective effort to address the pandemic's challenges during its early stages.
+                  <br><br>
+                  As a web developer committed to creating solutions that make a positive difference, COVID19 Tracker represents my dedication to leveraging technology for the greater good. Join me in celebrating this meaningful project as we continue to evolve and innovate in response to real-world challenges, putting technology to work for a healthier and more resilient future.
+                </p>
               </a>
             </li>
+            
+            
 
-            <li class="project-item active" data-filter-item data-category="applications">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{% static 'assets/images/project-8.jpg' %}"  alt="task manager" loading="lazy" />
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{% static 'assets/images/project-9.png' %}"  alt="arrival" loading="lazy" />
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
+           
           </ul>
         </section>
       </article>
@@ -832,175 +868,7 @@
       </div>
 
 
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-          <ul class="blog-posts-list">
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="{% static 'assets/images/blog-1.jpg' %}"  alt="Design conferences in 2022" loading="lazy" />
-                </figure>
-
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">
-                    Design conferences in 2022
-                  </h3>
-
-                  <p class="blog-text">
-                    Created this blog for design conference in 2022.
-                  </p>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="{% static 'assets/images/blog-2.jpg' %}"  alt="Best fonts every designer" loading="lazy" />
-                </figure>
-
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">
-                    Best fonts every designer
-                  </h3>
-
-                  <p class="blog-text">
-                    Blog created for developers and designer to give best
-                    fonts for their projects.
-                  </p>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="{% static 'assets/images/blog-3.jpg' %}"  alt="Design digest #80" loading="lazy" />
-                </figure>
-
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    This blog for designers to improve their creativity.
-                  </p>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="{% static 'assets/images/blog-4.jpg' %}"  alt="UI interactions of the week" loading="lazy" />
-                </figure>
-
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">
-                    UI interactions of the week
-                  </h3>
-
-                  <p class="blog-text">
-                    This blog about best ui interactions developed in the
-                    week.
-                  </p>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="{% static 'assets/images/blog-5.jpg' %}"  alt="The forgotten art of spacing" loading="lazy" />
-                </figure>
-
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">
-                    The forgotten art of spacing
-                  </h3>
-
-                  <p class="blog-text">
-                    Blog is for creators The importence of spacing in design
-                    proffesion.
-                  </p>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="{% static 'assets/images/blog-6.jpg' %}"  alt="Design digest #79" loading="lazy" />
-                </figure>
-
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    This blog for designers to improve their creativity.
-                  </p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </section>
-      </article>
-
+      
       <!--
         - #CONTACT
       -->
@@ -1009,14 +877,6 @@
         <header>
           <h2 class="h2 article-title">Contact</h2>
         </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30879.213020989424!2d78.71872127110198!3d14.661523718924572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb37bf2affbaf07%3A0x877fa1b02d15609d!2sKhajipet%20Bus%20Stop!5e0!3m2!1sen!2sin!4v1662274495151!5m2!1sen!2sin"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
 
         <section class="contact-form">
           <h3 class="h3 form-title">Contact Form</h3>
