@@ -1,0 +1,1056 @@
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>port-folio</title>
+
+  <!--
+    - favicon"{% static 'assets/images/logo.ico' %}"
+  -->
+  <link rel="shortcut icon" href="{% static 'assets/images/logo.ico' %}" type="image/x-icon" />
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{% static 'assets/css/style.css' %}"  />
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="{% static 'assets/images/sarvesh.png' %}"  alt="Sarvesh Salam" width="80" />
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Sarvesh Salam</h1>
+
+          <p class="title">Web developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:salam.sarvesh@gmail.com" class="contact-link">salam.sarvesh@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+917977941325" class="contact-link">7977941325</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1999-08-09">Sep 08, 1999</time>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Mumbai india</address>
+            </div>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+        </ul>
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Introducing the Web App Wizard: Crafting Captivating and Innovative Web Applications. 
+            
+          </p>
+          
+          <p>           
+            Look no further if you seek a mastermind behind captivating and innovative web applications. Meet the talented web app wizard – yours truly. With a Bachelor's degree in Computer Science from Mumbai University, earned in 2021, I have emerged as a rising star in the realm of web development.
+            <br>Driven by an unquenchable thirst for knowledge and an unwavering passion for technology, I ventured into the world of computer science with a burning desire to make a difference. 
+          </p>
+        </section>
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+          <h3 class="h3 service-title">What I'm Doing</h3>
+
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="{% static 'assets/images/icon-dev.svg' %}" alt="Web development icon" width="40" />
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web Development</h4>
+
+                <p class="service-item-text">
+                  As a passionate web developer, I specialize in high-quality website development with a strong focus on user experience and functionality. From front-end to back-end, I craft seamless and efficient web solutions.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="{% static 'assets/images/icon-app.svg'  %}" alt="PWA icon" width="40" />
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Progressive Web Apps (PWA)</h4>
+
+                <p class="service-item-text">
+                  Additionally, I have expertise in creating Progressive Web Apps (PWA) that provide an immersive and app-like experience to users while being highly performant and responsive across various devices.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="{% static 'assets/images/icon-sql.svg' %}" alt="Database icon" width="40" />
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">MySQL & Store Procedures</h4>
+
+                <p class="service-item-text">
+                  In addition to my web development skills, I possess advanced knowledge of MySQL, including expertise in writing efficient SQL queries and store procedures for robust and scalable databases.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="{% static 'assets/images/icon-python.svg' %}" alt="Python icon" width="40" />
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Python Automation</h4>
+
+                <p class="service-item-text">
+                  Moreover, I have a strong command of Python programming, enabling me to create automation scripts for various tasks, streamlining processes, and optimizing workflows.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="{% static 'assets/images/avatar-1.png' %}"  alt="Saurin Jariwala" width="60" data-testimonials-avatar />
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                  Saurin Jariwala
+                </h4>
+
+                <time datetime="2021-06-01" data-testimonials-time style="display: none;">Forms9 (Managing Director)<span style="float: right;font-size: small;font-style: italic;">01 June, 2021</span></time>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I had the pleasure of working with Sarvesh on multiple projects at forms9, and I must say that his expertise in web development is truly commendable. He spearheaded the creation of various web applications, including inventory management, billing software, and a seamless point-of-sale system.
+                    Sarvesh's professionalism and attention to detail are evident in every aspect of his work. He consistently demonstrated a deep understanding of our requirements and worked diligently to ensure that the end products were not only functional but also visually appealing.
+                    Throughout the collaboration, Sarvesh exhibited remarkable problem-solving skills, addressing any challenges that arose with ease. His ability to communicate effectively and adapt to changing project needs made the entire development process smooth and efficient.
+                    I highly recommend Sarvesh for anyone seeking top-notch web development services. He is a talented and reliable developer who goes above and beyond to deliver exceptional results.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="{% static 'assets/images/avatar-2.png' %}"  alt="Ajay Garg" width="60" data-testimonials-avatar />
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                  Ajay Garg
+                </h4>
+                <time datetime="2023-03-03" data-testimonials-time style="display: none;">Accenture (Team Lead)<span style="float: right;font-size: small;font-style: italic;">03 March, 2023</span></time>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Sarvesh has been an invaluable asset to our team since he joined Accenture. His dedication and passion for web development are truly commendable. From the moment he started working on the Rio Tinto project, it was evident that he possesses a rare combination of technical expertise and creativity.
+                    Sarvesh's ability to handle complex challenges and deliver top-notch solutions is impressive. He consistently meets and exceeds our expectations, ensuring that the projects are completed on time and with the highest level of quality. His attention to detail and strong problem-solving skills have been instrumental in the success of various web applications he has worked on.
+                    Not only is Sarvesh an exceptional developer, but he is also a great team player. He collaborates effectively with his peers, sharing his knowledge and ideas to enhance the overall team performance. His positive attitude and willingness to help others have created a supportive and encouraging work environment.
+                    It is a pleasure to have Sarvesh as a part of our team, and we look forward to witnessing his continued growth and success in his career.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="{% static 'assets/images/avatar-3.png' %}"  alt="Shalabh Saxena" width="60" data-testimonials-avatar />
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                  Shalabh Saxena
+                </h4>
+                <time datetime="2023-05-12" data-testimonials-time style="display: none;">Accenture (Manager)<span style="float: right;font-size: small;font-style: italic;">12 May, 2023</span></time>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Sarvesh consistently exhibits a strong work ethic and a deep commitment to delivering the best possible results. His ability to grasp complex requirements and turn them into practical solutions is truly impressive. Additionally, he has a keen eye for detail and ensures that every aspect of the applications meets the highest standards of quality.
+                    Under Sarvesh's leadership, the team has achieved significant milestones and received numerous accolades from our clients. His dedication to excellence and passion for staying updated with the latest technologies sets him apart as a reliable and forward-thinking developer
+                  </p>
+                </div>
+              </div>
+            </li>
+            
+          </ul>
+        </section>
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="{% static 'assets/images/avatar-1.png' %}"  alt="Ajay Garg" width="80" data-modal-img />
+              </figure>
+
+              <img src="{% static 'assets/images/icon-quote.svg' %}"  alt="quote icon" />
+            </div>
+
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title>Ajay Garg</h4>
+
+              <time datetime="2021-06-14" data-modal-time>03 March, 2023</time>
+
+              <div data-modal-text>
+                <p>
+                  Sarvesh has been an invaluable asset to our team since he joined Accenture. His dedication and passion for web development are truly commendable. From the moment he started working on the Rio Tinto project, it was evident that he possesses a rare combination of technical expertise and creativity.
+                  Sarvesh's ability to handle complex challenges and deliver top-notch solutions is impressive. He consistently meets and exceeds our expectations, ensuring that the projects are completed on time and with the highest level of quality. His attention to detail and strong problem-solving skills have been instrumental in the success of various web applications he has worked on.
+                  Not only is Sarvesh an exceptional developer, but he is also a great team player. He collaborates effectively with his peers, sharing his knowledge and ideas to enhance the overall team performance. His positive attitude and willingness to help others have created a supportive and encouraging work environment.
+                  It is a pleasure to have Sarvesh as a part of our team, and we look forward to witnessing his continued growth and success in his career.                  
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+            <li class="clients-item">
+              <a href="#">
+                <img src="{% static 'assets/images/logo-1-color.png' %}"  alt="client logo" />
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="{% static 'assets/images/logo-2-color.png' %}"  alt="client logo" />
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="{% static 'assets/images/logo-3-color.png' %}"  alt="client logo" />
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="{% static 'assets/images/logo-4-color.png' %}"  alt="client logo" />
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="{% static 'assets/images/logo-5-color.png' %}"  alt="client logo" />
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="{% static 'assets/images/logo-6-color.png' %}"  alt="client logo" />
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                ST. John college of engineering and management
+              </h4>
+
+              <span>2017 - 2021</span>
+
+              <p class="timeline-text">
+                B.Tech in CS - <b>7.1 CGPA</b> 
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                SVP Junior College of Commerce and Science
+              </h4>
+
+              <span>2015 - 2017</span>
+
+              <p class="timeline-text">
+                Higher Secondary School Certificate (HSC) - <b>65%</b>
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">ST. Francis High School</h4>
+
+              <span>2014 - 2015</span>
+
+              <p class="timeline-text">
+                Secondary School Certificate (SSC) - <b>85%</b>
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="desktop-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Custom Software Engineering Associate</h4>
+              <span style="font-weight: bold;">Accenture Sol. Pvt Ltd<span style="float: right;font-style: italic;">2022 — Present</span></span>            
+              <p class="timeline-text" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                As a Custom Software Engineering Associate at Accenture Solutions, I am actively involved in enhancing ASP.NET applications and leveraging my expertise in SQL and stored procedures to deliver efficient solutions for the Rio Tinto project.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Freelancing</h4>
+              <span style="font-weight: bold;">Word-of-Mouth Referrals<span style="float: right;font-style: italic;">2020 — Present</span></span>
+              <p class="timeline-text" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                As a freelancer, I specialize in crafting responsive web applications, Progressive Web Apps (PWAs), and automation scripts for clients using Django. My focus on delivering high-quality solutions has enabled me to excel in creating tailored web experiences that meet the unique needs of each client
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Software/Web Developer</h4>
+              <span style="font-weight: bold;">Forms9 Pvt Ltd <span style="float: right;font-style: italic;">2021 — 2022</span></span>
+              <p class="timeline-text" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                During my tenure at Forms9 Pvt Ltd, I spearheaded the development of various web applications, including Inventory Management, Billing, POS, and Stock Live Tracking, while also honing my web design skills to create appealing and responsive websites.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Adjunct Educator</h4>
+              <span style="font-weight: bold;">A.K.S Academy <span style="float: right;font-style: italic;">2017 — 2020</span></span>
+              <p class="timeline-text" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                During my tenure as an adjunct educator at A.K.S Academy, I had the privilege of teaching mathematics and science to students, imparting knowledge and fostering a passion for learning. 
+              </p>
+            </li>
+            
+          </ol>
+        </section>
+
+        <section class="skill">
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Django</h5>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">JS</h5>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 65%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Ajax</h5>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">HTML/CSS</h5>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">SQL</h5>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Store Procedure</h5>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%"></div>
+              </div>
+            </li>
+            
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">ASP.NET</h5>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 40%"></div>
+              </div>
+            </li>           
+          </ul>
+        </section>
+      </article>
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>
+                Select category
+              </div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+            <li class="project-item active" data-filter-item data-category="web development" data-portfolio-item>
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="{% static 'assets/images/portfolio/Inventory1.png' %}"  alt="inventorymanagement" loading="lazy" data-portfolio-image-1 />
+                  <img src="{% static 'assets/images/portfolio/Inventory2.png' %}"  alt="inventorymanagement" loading="lazy" data-portfolio-image-2 style="display: none;"/>
+                  <img src="{% static 'assets/images/portfolio/Inventory3.png' %}"  alt="inventorymanagement" loading="lazy" data-portfolio-image-3 style="display: none;"/>
+                </figure>
+
+                <h3 class="project-title" data-portfolio-title>Inventory Management</h3><br><br>
+
+                <p class="project-category" data-portfolio-text style="display: none;">As a skilled and innovative web developer, I successfully designed and developed an advanced Inventory Management System for the esteemed company, <b style="color:  var(--orange-yellow-crayola);">Forms9</b>. Leveraging cutting-edge technologies such as <b style="color:  var(--orange-yellow-crayola);">Python, Django, HTML/CSS, JavaScript, AJAX, and REST API,</b> I created a feature-rich application that has transformed the way product data is managed.
+                <br><br>
+                A standout feature of the application is its user-friendly multi-inline form, enabling seamless entry and storage of product data. Users can effortlessly select cipher values based on price, while also having the freedom to add product categories and sub-categories to organize their inventory efficiently.
+                <br><br>
+                The system's versatility shines through with its ability to generate customizable prints for various functions, such as product labels, inwarded quantity reports, and packing records. Additionally, users can effortlessly manage product returns, ensuring error-free transactions and maintaining optimal inventory control.
+                <br><br>
+                To further streamline operations, the application incorporates a dispatch feature, empowering users to monitor multiple packings sent outside the company. The inclusion of a unique and sequential product numbering system ensures accurate tracking and easy retrieval of vital information.
+                <br><br>
+                The Inventory Management System also offers a comprehensive array of capabilities, ranging from the flexibility to edit and delete inward records to adding, updating, or removing suppliers. Users can generate invoices effortlessly and swiftly find barcodes or apply filters to locate specific products with ease.
+                <br><br>
+                Furthermore, the system includes robust reporting features, providing insightful data analysis and performance evaluations. It empowers users to make informed decisions and optimize their inventory management strategies effectively.
+                <br><br>
+                This achievement showcases my expertise in web development and my commitment to creating sophisticated, user-centric solutions. I take great pride in this project and look forward to continuing my journey of delivering remarkable and impactful web applications to meet the unique needs of clients.</p>
+              </a>
+            </li>      
+
+            <li class="project-item active" data-filter-item data-category="web development" data-portfolio-item>
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="{% static 'assets/images/portfolio/Billing1.png' %}"  alt="billmanagement" loading="lazy" data-portfolio-image-1 />
+                  <img src="{% static 'assets/images/portfolio/Billing2.png' %}"  alt="billmanagement" loading="lazy" data-portfolio-image-2 style="display: none;"/>
+                  <img src="{% static 'assets/images/portfolio/Billing3.png' %}"  alt="billmanagement" loading="lazy" data-portfolio-image-3 style="display: none;"/>
+                </figure>
+
+                <h3 class="project-title" data-portfolio-title>Bill Management</h3><br><br>
+
+                <p class="project-category" data-portfolio-text style="display: none;">Introducing a cutting-edge Billing Software designed specifically for the discerning needs of prominent companies - "Manage your incentives the right way with SPE." This innovative solution empowers businesses to effortlessly track and manage all their bills from various sources, conveniently centralized in one comprehensive platform.
+                  <br><br>
+                  SPE Billing Software is tailored to cater to giants of the industry, providing them with a seamless and efficient way to handle their billing processes. With the ability to customize the platform according to individual plant requirements, it offers unparalleled flexibility and adaptability to suit diverse business needs.
+                  <br><br>
+                  Built on a robust technology stack encompassing Python, Django, HTML/CSS, JavaScript, AJAX, and REST API, this software stands as a testament to my expertise in web development. The inclusion of Razor Pay elevates the user experience, ensuring secure and hassle-free payment processing for enhanced convenience.
+                  <br><br>
+                  With SPE Billing Software, businesses can optimize their incentives management, streamline operations, and gain valuable insights into their financial processes. The system's intuitive interface and user-friendly design make it a valuable asset for any enterprise seeking to achieve utmost efficiency in their billing workflows.
+                  <br><br>
+                  This project is a remarkable addition to my portfolio, highlighting my ability to create sophisticated and functional software solutions that cater to the specific demands of distinguished companies. I am proud to have developed SPE Billing Software and look forward to presenting this achievement as a testament to my dedication and proficiency in delivering exceptional web applications.</p></a>
+            </li> 
+
+            <li class="project-item active" data-filter-item data-category="applications">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="{% static 'assets/images/project-4.png' %}"  alt="brawlhalla" loading="lazy" />
+                </figure>
+
+                <h3 class="project-title">Gamer</h3>
+
+                <p class="project-category">Applications</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web design">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="{% static 'assets/images/project-5.png' %}"  alt="dsm." loading="lazy" />
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web design">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="{% static 'assets/images/project-6.png' %}"  alt="metaspark" loading="lazy" />
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="{% static 'assets/images/project-7.png' %}"  alt="summary" loading="lazy" />
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="applications">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="{% static 'assets/images/project-8.jpg' %}"  alt="task manager" loading="lazy" />
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="{% static 'assets/images/project-9.png' %}"  alt="arrival" loading="lazy" />
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!--
+        - portfolio modal
+      -->
+
+      <div class="modal-container" data-modal-container-portfolio >
+        <div class="overlay" data-overlay-portfolio></div>
+
+        <section class="testimonials-modal" style="gap: 0 !important;max-width: fit-content;">
+          <button class="modal-close-btn" data-modal-close-btn-portfolio>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="modal-img-wrapper">
+            <figure class="modal-avatar-box">
+              <img src="{% static 'assets/images/avatar-1.png' %}"  alt="Ajay Garg" style="margin: 10 !important;width: 250 !important;"  data-modal-img-portfolio-1/>
+              <img src="{% static 'assets/images/avatar-1.png' %}"  alt="Ajay Garg" style="margin: 10 !important;width: 250 !important;"  data-modal-img-portfolio-2 />
+              <img src="{% static 'assets/images/avatar-1.png' %}"  alt="Ajay Garg" style="margin: 10 !important;width: 250 !important;"  data-modal-img-portfolio-3 />
+            </figure>
+          </div>
+
+          <div class="modal-content-container" style="max-height: 500px;overflow-y: auto;">
+            <h4 class="h3 modal-title" data-modal-title-portfolio style="color: var(--orange-yellow-crayola);"></h4>
+            <div data-modal-text-portfolio style="color: aliceblue;">          
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+          <ul class="blog-posts-list">
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="{% static 'assets/images/blog-1.jpg' %}"  alt="Design conferences in 2022" loading="lazy" />
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">
+                    Design conferences in 2022
+                  </h3>
+
+                  <p class="blog-text">
+                    Created this blog for design conference in 2022.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="{% static 'assets/images/blog-2.jpg' %}"  alt="Best fonts every designer" loading="lazy" />
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">
+                    Best fonts every designer
+                  </h3>
+
+                  <p class="blog-text">
+                    Blog created for developers and designer to give best
+                    fonts for their projects.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="{% static 'assets/images/blog-3.jpg' %}"  alt="Design digest #80" loading="lazy" />
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    This blog for designers to improve their creativity.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="{% static 'assets/images/blog-4.jpg' %}"  alt="UI interactions of the week" loading="lazy" />
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">
+                    UI interactions of the week
+                  </h3>
+
+                  <p class="blog-text">
+                    This blog about best ui interactions developed in the
+                    week.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="{% static 'assets/images/blog-5.jpg' %}"  alt="The forgotten art of spacing" loading="lazy" />
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">
+                    The forgotten art of spacing
+                  </h3>
+
+                  <p class="blog-text">
+                    Blog is for creators The importence of spacing in design
+                    proffesion.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="{% static 'assets/images/blog-6.jpg' %}"  alt="Design digest #79" loading="lazy" />
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    This blog for designers to improve their creativity.
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30879.213020989424!2d78.71872127110198!3d14.661523718924572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb37bf2affbaf07%3A0x877fa1b02d15609d!2sKhajipet%20Bus%20Stop!5e0!3m2!1sen!2sin!4v1662274495151!5m2!1sen!2sin"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="assets/php/data.php" class="form" data-form method="post">
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input />
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required
+                data-form-input />
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="{% static 'assets/js/script.js' %}" ></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
