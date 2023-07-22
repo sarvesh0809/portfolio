@@ -187,3 +187,30 @@ for (let i = 0; i < portfoliosItem.length; i++) {
 // add click event to modal close button
 modalCloseBtnPortfolio.addEventListener("click", portfoliotestimonialsModalFunc);
 overlayPortfolio.addEventListener("click", portfoliotestimonialsModalFunc);
+
+
+/// Resume Download
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the download icon element
+  const downloadIcon = document.getElementById("download-icon");
+
+  // Add a click event listener to the download icon
+  downloadIcon.addEventListener("click", function () {
+    // Replace the URL with the direct link to your resume file
+    const resumeURL = "https://drive.google.com/uc?export=download&id=14MjWGiwL44MLU8W_y26dCXrh_kyP72Ke";
+
+    // Create a temporary link to trigger the download
+    const tempLink = document.createElement("a");
+    tempLink.href = resumeURL;
+    tempLink.setAttribute("download", "resume.pdf"); // Set the desired file name for the download
+    tempLink.style.display = "none";
+
+    // Append the link to the DOM and trigger the click event
+    document.body.appendChild(tempLink);
+    tempLink.click();
+
+    // Remove the link from the DOM
+    document.body.removeChild(tempLink);
+  });
+});
