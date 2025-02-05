@@ -198,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Add a click event listener to the download icon
   downloadIcon.addEventListener("click", function () {
     // Replace the URL with the direct link to your resume file
-    const resumeURL = "https://drive.google.com/file/d/1kTVbbJrkFw0TYy5XWvaeqZNE8AgU4F3Y/view?usp=drive_link";
+    const resumeURL = "https://drive.google.com/file/d/1jogPlWs63P6upqMFUOjaYFwVLJg99W4o/view?usp=sharing";
 
     // Create a temporary link to trigger the download
     const tempLink = document.createElement("a");
